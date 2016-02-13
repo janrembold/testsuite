@@ -6,7 +6,7 @@ before_install:
   - git clone git://github.com/n1k0/casperjs.git ~/casperjs
   - cd ~/casperjs
   - export PATH=$PATH:`pwd`/bin
-#  - cd -
+  - cd -
 before_script:
   - phantomjs --version
   - casperjs --version
