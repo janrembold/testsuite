@@ -1,6 +1,6 @@
 casper.test.begin('testing.html contains stuff', 3, function (test) {
 
-    casper.start('testing.html', function () {
+    casper.start('./test/test1.html', function () {
         test.assertTitle('Test Page');
         test.assertSelectorHasText('h1', 'Test!');
     });

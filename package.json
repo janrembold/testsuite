@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/janrembold/testsuite#readme",
   "devDependencies": {
+    "casperjs": "^1.1.0-beta5",
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.7"
   }
