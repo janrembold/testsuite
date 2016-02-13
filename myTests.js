@@ -13,5 +13,5 @@ casper.test.begin('testing.html contains stuff', 3, function (test) {
     casper.run(function() {
         test.done();
     });
-    
+
 });
