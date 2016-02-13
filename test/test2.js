@@ -7,7 +7,7 @@ casper.test.begin('testing.html contains stuff', 3, function (test) {
 
     casper.then(function () {
         this.click('button');
-        test.assertSelectorHasText('h1', 'New title');
+        test.assertSelectorHasText('h1', 'New title fail');
     });
 
     casper.run(function() {
