@@ -3,8 +3,7 @@ var spawn = require('child_process').spawn,
     gutil = require('gulp-util');
 
 gulp.task('test', function () {
-    var tests = ['myTests.js'];
-
+    var tests = ['test/'];
     var casperChild = spawn('casperjs', ['test'].concat(tests));
 
     casperChild.stdout.on('data', function (data) {
@@ -15,5 +14,8 @@ gulp.task('test', function () {
         var success = code === 0; // Will be 1 in the event of failure
 
         // Do something with success here
+        if (!success) {
+            process.exit(1);
+        }
     });
 });
