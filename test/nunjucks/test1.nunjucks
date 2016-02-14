@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block content %}
+
+    <h1>Test!</h1>
+    {% include "accordion.default.nunjucks" %}
+
+{% endblock %}
+
+
+{% block scripts %}
+
+    document.querySelector('button').addEventListener('click', function () {
+        document.querySelector('h1').innerHTML = 'New title';
+    });
+
+{% endblock %}
