@@ -1,9 +1,30 @@
 {% extends "master.nunjucks" %}
 
+{% block styles %}
+
+h1 {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+  h1 {
+    display: block;
+  }
+}
+
+{% endblock %}
+
 {% block content %}
 
     <h1>Test!</h1>
     {% include "accordion.default.nunjucks" %}
+
+{% endblock %}
+
+
+{% block includes %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 {% endblock %}
 
